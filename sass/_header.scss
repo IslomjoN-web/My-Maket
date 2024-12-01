@@ -1,0 +1,176 @@
+// header part worked 
+header{
+    width: 100%;
+    max-height: 100vh;
+    background-color: $whiteterColor;
+    font-family: $inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .header__animation {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        .header__animation-item {
+            width: 10px;
+            height: 10px;
+            background-color: $black;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .header__child1{
+            right: 400px;
+            top: 50px;
+        }
+        .header__child2 {
+            top: 500px;
+            left: 50px;
+            background-color: grey;
+        }
+        .header__child3{
+            top: 400px;
+            left: 1400px;
+            background-color: grey
+        }
+        .header__child4{
+            top: 150px;
+            left: 200px;
+        }
+        .header__child5{
+            top: 80px;
+            left: 600px;
+            background-color: grey
+        }
+        .header__child6{
+            top: 600px;
+            left: 800px;
+        }
+        
+    }
+    .header__container {
+        @include container;
+        height: 100vh ; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header__items {
+            width: 955px;
+            padding: 25px;
+            max-width: 955px;
+            min-height: 394px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: $grey;
+            border-radius: 16px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            transition: 2s;
+            animation: animate 2s infinite linear alternate;
+            // &:hover {
+            //     transform: translateY(-25px);
+            // }
+            .header__title {
+                width: 100%;
+                padding-left: 50px ;
+                h2 {
+                    color: $black;
+                    font-size: 40px;
+                    font-weight: 400;
+                }
+            }
+            .header__dicx {
+                width: 100%;
+                h1{
+                    font-size: 100px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+            .header-about-name {
+                width: 100%;
+                text-align: end;
+                padding-right: 50px ;
+                h2{
+                    font-size: 30px;
+                    font-weight: 400;
+                    color: $black;
+                    padding: 0;
+                    margin: 0;
+                }
+                h3 {
+                    font-size: 23px;
+                    font-weight: 400;
+                    color: $black;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// haeder responsive (max-768px)
+@media (max-width: 768px) {
+    header{
+        .header__animation {
+            .header__child1{
+                left: 50px;
+            }
+            .header__child3{
+                left: 200px;
+                top: 70px;
+            }
+            .header__child4 {
+                left: 350px;
+            }
+            .header__child5 {
+                left: 10px;
+            }
+            .header__child6{
+                left: 300px ;
+            }
+        }
+        .header__container{
+            .header__items {
+                width: 80%;
+                gap: 20px;
+                .header__title {
+                    padding: 0;
+                    h2 {
+                        font-size: 15px;
+                    }
+                }
+                .header__dicx {
+                    h1 {
+                        font-size: 35px;
+                        text-align: center;
+                    }
+                }
+                .header-about-name {
+                    padding: 0;
+                    h2{
+                        font-size: 13px;
+                    }
+                    h3{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// header responsive (min-769px) and (max-1024px)
+@media (min-width: 769px) and (max-width: 1024px) {
+    header{
+        .header__animation {
+            .header__child3 {
+                left: 25px;
+            }
+        }
+    }
+}

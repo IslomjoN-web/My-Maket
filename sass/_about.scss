@@ -1,0 +1,258 @@
+// about qism tayyorlanyapdi. Bu qismda shuni aytishim kerakki ma'lumotlarni juda ko'p bo'lishi uchun hamma so'zlarni ham rost ishlamadim
+.aboutt {
+    width: 100%;
+    min-height: 1200px;
+    background-color: $whiteterColor;
+
+    .about__color {
+        width: 100%;
+        min-height: 1200px;
+        background-color: #8F9A9C;
+        border-radius: 100px 100px 0 0;
+
+        .container {
+            @include container;
+            height: 600px;
+
+            .about__menu {
+                width: 100%;
+                display: flex;
+                height: 10vh;
+                justify-content: end;
+                margin-bottom: 25px;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 50px;
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            font-size: 23px;
+                            font-weight: 400;
+                            color: white;
+                            padding-bottom: 10px;
+
+                            &:hover {
+                                color: $grey;
+                                border-bottom: 3px solid grey;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about__me {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 35px;
+
+                // gap-: 15px;
+                .about__disx {
+                    width: 623px;
+
+                    h2 {
+                        color: #ffffff;
+                        font-size: 45px;
+                        font-weight: 700;
+                        font-family: $inter;
+
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+
+                    p {
+                        font-family: $inter;
+                        color: white;
+                        font-size: 23px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .about__know {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .about__us {
+                    margin-top: 25px;
+                    width: 494px;
+                    height: 267px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .about-know__text {
+                        margin-bottom: 15px;
+
+                        h3 {
+                            font-size: 30px;
+                            font-family: $inter;
+                            font-weight: 600;
+                            color: #fff;
+                            padding-bottom: 10px;
+                        }
+                    }
+
+                    .about__habilidadlar {
+                        display: flex;
+                        // flex-direction: column;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        gap: 10px;
+
+                        button {
+                            border: 1px solid white;
+                            font-size: 25px;
+                            background-color: #d9d9d942;
+                            padding: 10px 15px;
+                            border-radius: 35px;
+
+                            &:hover {
+                                background-color: rgba(128, 128, 128, 0.288);
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                .about__tuth {
+                    align-items: end;
+
+                    .about__habilidadlar {
+                        justify-content: end;
+                    }
+                }
+            }
+
+            .about__me-dow {
+                margin-top: 25px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .aboutOne {
+                    color: white;
+
+                    .about-educaco {
+                        margin-bottom: 30px;
+
+                        a {
+                            color: white;
+                            font-size: 30px;
+                            font-weight: 400;
+                            text-decoration: none;
+                            padding-bottom: 10px;
+
+                            &:hover {
+                                border-bottom: 3px solid grey;
+                            }
+                        }
+                    }
+
+                    .about-dicss {
+                        padding-bottom: 25px;
+
+                        .about__denzer {
+                            font-size: 23px;
+                            font-size: 500;
+                            font-family: $inter;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            font-family: $inter;
+                            color: #ffffff75;
+                        }
+
+                        h5 {
+                            font-size: 10px;
+                            font-weight: 400;
+                            font-family: $inter;
+                            color: #ffffff75;
+                        }
+                    }
+                }
+
+                .aboutTwo {
+                    width: 515px;
+                    height: 184px;
+                    display: flex;
+                    flex-direction: column ;
+                    justify-content: space-between;
+
+                    .about-educaco {
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
+                        margin-bottom: 10px;
+
+                        a {
+                            color: white;
+                            font-size: 30px;
+                            font-weight: 400;
+                            text-decoration: none;
+                            padding-bottom: 10px;
+                            text-align: end;
+                            display: block;
+
+                            &:hover {
+                                border-bottom: 3px solid grey;
+                            }
+                        }
+                    }
+                    ul{
+                        margin-top: 10px;
+                        li{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: start;
+                            align-items: center;
+                            gap: 15px;
+                            
+                            .about__sent {
+                                font-size: 23px;
+                                font-weight: 400;
+                                color: white;
+                            }
+                            .about__inter {
+                                font-size: 18px;
+                                font-weight: 300;
+                                color: rgba(255, 255, 255, 0.363);
+                               text-align: end;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    background-color: $grey;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $black;
+    border-radius: 50px;
+    border: 2px solid $grey;
+}
+
+
+// responsive (max-768px)
+@media (max-width: 768px) {
+    .aboutt{
+        .about__color{
+            .about__container {
+                .about__menu {
+                    
+                }
+            }
+        }
+    }
+}
