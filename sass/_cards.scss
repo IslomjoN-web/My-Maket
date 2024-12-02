@@ -1,0 +1,92 @@
+.ux {
+    width: 100%;
+    background-color: #E6E8E3;
+    min-height: 220vh;
+    position: relative;
+
+    .ux__color {
+        @include container;
+
+        h2 {
+            font-size: 300px;
+            font-family: $inter;
+            text-align: end;
+            color: #65727ac1;
+
+        }
+    }
+
+    .ux__ter {
+        width: 100%;
+        background-color: #65727a68;
+        min-height: 185vh;
+        position: absolute;
+        top: 250px;
+        border-radius: 100px 100px 0 0;
+
+        .ux__container {
+            @include container;
+            min-height: 1000px;
+
+            .ux__title {
+                h2 {
+                    font-size: 150px;
+                    font-weight: 700;
+                    font-family: $inter;
+                    text-align: start;
+                }
+            }
+
+            .ux__items {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 55px;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    transition: 0.7s;
+                    border-radius: 35px;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// responsive max-width: 768px
+@media (max-width: 768px) {
+    .ux {
+        min-height: 315vh;
+        .ux__ter {
+            min-height: 282vh;
+            .ux__container {
+                .ux__title {
+                    margin-top: 90px;
+                }
+            }
+        }
+    }
+}
+
+// responsive min-w-769 and min-w-1024 
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ux {
+        min-height: 242vh;
+        .ux__ter {
+            min-height: 220vh;
+            .ux__container {
+                .ux__items {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
