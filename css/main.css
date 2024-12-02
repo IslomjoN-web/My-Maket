@@ -404,4 +404,74 @@ header .header__container .header__items .header-about-name h3 {
   background-color: #000000;
   border-radius: 50px;
   border: 2px solid #D9D9D9;
+}
+
+@media (max-width: 768px) {
+  .aboutt .about__color .about__container {
+    min-height: 2200px;
+  }
+  .aboutt .about__color .about__container .about__menu {
+    padding-right: 40px;
+  }
+  .aboutt .about__color .about__container .about__me {
+    flex-direction: column;
+  }
+  .aboutt .about__color .about__container .about__me .about__disx {
+    width: 100%;
+    text-align: center;
+  }
+  .aboutt .about__color .about__container .about__me .about__disx h2 {
+    font-size: 25px;
+  }
+  .aboutt .about__color .about__container .about__me .about__disx p {
+    font-size: 15px;
+  }
+  .aboutt .about__color .about__container .about__know {
+    flex-direction: column;
+    height: 800px;
+  }
+  .aboutt .about__color .about__container .about__know .about__us {
+    width: 100%;
+    text-align: center;
+  }
+  .aboutt .about__color .about__container .about__know .about__us .about-know__text {
+    width: 100%;
+  }
+  .aboutt .about__color .about__container .about__know .about__us .about__habilidadlar {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .aboutt .about__color .about__container .about__me-dow {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutt .about__color .about__container .about__me-dow .aboutTwo {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .aboutt .about__color .about__container .about__me-dow .aboutTwo .about-educaco {
+    justify-content: start;
+  }
+  .aboutt .about__color .about__container .about__me-dow .aboutTwo ul li .about__inter {
+    font-size: 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .aboutt .about__color .about__container {
+    min-height: 1600px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .aboutt .about__color .about__container .about__menu {
+    margin-bottom: 1px;
+  }
+  .aboutt .about__color .about__container .about__know {
+    min-height: 470px;
+  }
+  .aboutt .about__color .about__container .about__know .about__us {
+    margin-top: 1px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -249,8 +249,82 @@
     .aboutt{
         .about__color{
             .about__container {
+                min-height: 2200px;
+                .about__menu{
+                    padding-right: 40px;
+                }
+                .about__me {
+                    flex-direction: column;
+                    .about__disx {
+                        width: 100%;
+                        text-align: center;
+                        h2{
+                            font-size: 25px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .about__know{
+                    // margin-bottom: 350px;
+                    flex-direction: column;
+                    height: 800px;
+                    .about__us {
+                        width: 100%;
+                        text-align: center;
+                            .about-know__text {
+                                width: 100%;
+                            }
+                            .about__habilidadlar {
+                                width: 100%;
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+                            }
+                    }
+                }
+                .about__me-dow {
+                    display: flex;
+                    flex-direction: column;
+                    .aboutTwo {
+                        width: 100%;
+                        margin-top: 50px;
+                        .about-educaco {
+                            justify-content: start;
+                        }
+                        ul {
+                            li{
+                                .about__inter {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive (min-width: 769px) and (max-width: 1024px)
+@media (min-width: 769px) and (max-width:1024px) {
+    .aboutt {
+        .about__color {
+            .about__container {
+                min-height: 1600px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                // justify-content: space-between;
                 .about__menu {
-                    
+                    margin-bottom: 1px;
+                }
+                .about__know {
+                    min-height: 470px;
+                    .about__us {
+                        margin-top: 1px;
+                    }
                 }
             }
         }
